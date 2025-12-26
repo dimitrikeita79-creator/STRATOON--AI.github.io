@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STRATOON-AI | Automatisation & IA Burkina Faso</title>
+
+<!-- Tailwind CSS & Lucide Icons -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#10b981',
+        secondary: '#8b5cf6',
+        dark: '#020617'
+      }
+    }
+  }
+}
+</script>
+
+<style>
+body { font-family: 'Plus Jakarta Sans', sans-serif; background-color:#020617; color:white; scroll-behavior:smooth;}
+.glass { background: rgba(2,6,23,0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1);}
+.gradient-text { background: linear-gradient(90deg, #10b981, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+.card-hover:hover { transform: translateY(-10px); border-color: #10b981; transition: all 0.3s ease;}
+.reveal { opacity:0; transform: translateY(30px); transition: all 0.8s ease-out;}
+.reveal.active { opacity:1; transform: translateY(0);}
+</style>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center border-b border-white/5">
+  <div class="text-2xl font-black tracking-tighter flex items-center gap-2">
+    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+      <i data-lucide="cpu" class="text-dark w-5 h-5"></i>
+    </div>
+    STRATOON<span class="text-primary">-AI</span>
+  </div>
+  <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-wider">
+    <a href="#services" class="hover:text-primary transition">Services</a>
+    <a href="#portfolio" class="hover:text-primary transition">Portfolio</a>
+    <a href="#method" class="hover:text-primary transition">Méthode</a>
+    <a href="#pricing" class="hover:text-primary transition">Tarifs</a>
+    <a href="#faq" class="hover:text-primary transition">FAQ</a>
+    <a href="#contact" class="hover:text-primary transition">Contact</a>
+  </div>
+  <a href="https://wa.me/22607366567" class="bg-primary hover:bg-emerald-600 text-dark px-6 py-2 rounded-full font-bold transition flex items-center gap-2">
+    <i data-lucide="whatsapp" class="w-4 h-4"></i> Devis Gratuit
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center px-6 pt-20 bg-glow">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <span class="text-secondary font-bold tracking-[0.3em] uppercase text-xs mb-4 block">Leader IA au Burkina Faso</span>
+      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+        Propulsez votre <span class="gradient-text">Business avec l'IA</span>
+      </h1>
+      <p class="text-gray-400 text-lg mb-10 max-w-lg">
+        Transformez votre PME en entreprise futuriste. Automatisation WhatsApp, Chatbots intelligents et croissance exponentielle.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="bg-white text-dark px-8 py-4 rounded-xl font-bold hover:bg-primary hover:text-white transition flex items-center gap-2 shadow-xl shadow-primary/10">
+          Lancer mon projet <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+        <a href="#services" class="border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition">Nos Solutions</a>
+      </div>
+    </div>
+    <div class="relative reveal delay-200">
+      <div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 blur-[100px] rounded-full"></div>
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c443f0e?auto=format&fit=crop&w=800&q=80" 
+           alt="Expertise Digitale Afrique" class="rounded-3xl border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+    </div>
+  </div>
+</section>
+
+<!-- LE PROBLÈME -->
+<section class="py-24 px-6 bg-white/5" id="problem">
+  <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+    <h2 class="text-4xl font-extrabold mb-4">Pourquoi les entreprises burkinabè perdent-elles du temps ?</h2>
+    <p class="text-gray-500">Sans IA, les PME passent des heures à gérer des tâches répétitives et perdent des opportunités.</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <div class="bg-dark p-8 rounded-3xl card-hover reveal">
+      <i data-lucide="clock" class="text-primary mb-4 w-8 h-8"></i>
+      <h3 class="font-bold mb-2">Gestion Manuelle</h3>
+      <p class="text-gray-400 text-sm">Les tâches répétitives consomment du temps précieux chaque jour.</p>
+    </div>
+    <div class="bg-dark p-8 rounded-3xl card-hover reveal delay-100">
+      <i data-lucide="shopping-cart" class="text-secondary mb-4 w-8 h-8"></i>
+      <h3 class="font-bold mb-2">Perte de Ventes</h3>
+      <p class="text-gray-400 text-sm">Les opportunités sont manquées faute d'automatisation.</p>
+    </div>
+    <div class="bg-dark p-8 rounded-3xl card-hover reveal delay-200">
+      <i data-lucide="users" class="text-primary mb-4 w-8 h-8"></i>
+      <h3 class="font-bold mb-2">Communication Inefficace</h3>
+      <p class="text-gray-400 text-sm">Les réponses aux clients sont lentes et peu fiables.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-24 px-6" id="services">
+  <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+    <h2 class="text-4xl font-extrabold mb-4">Nos Services <span class="text-secondary italic">Automatisés</span></h2>
+    <p class="text-gray-500">Des solutions conçues pour scaler sans augmenter vos coûts.</p>
+  </div>
+  <div class="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+    <div class="p-8 glass rounded-3xl card-hover reveal">
+      <i data-lucide="message-square" class="w-12 h-12 text-primary mb-4"></i>
+      <h3 class="text-xl font-bold mb-2">Chatbots WhatsApp</h3>
+      <p class="text-gray-400 text-sm mb-4">Réponses 24h/24, gestion des commandes et paiements.</p>
+    </div>
+    <div class="p-8 glass rounded-3xl card-hover reveal delay-100">
+      <i data-lucide="database" class="w-12 h-12 text-secondary mb-4"></i>
+      <h3 class="text-xl font-bold mb-2">Automatisation Admin</h3>
+      <p class="text-gray-400 text-sm mb-4">Make, Google Sheets, CRM — fini la paperasse.</p>
+    </div>
+    <div class="p-8 glass rounded-3xl card-hover reveal delay-200">
+      <i data-lucide="layout" class="w-12 h-12 text-white mb-4"></i>
+      <h3 class="text-xl font-bold mb-2">Web Design High-Tech</h3>
+      <p class="text-gray-400 text-sm mb-4">Sites ultra-rapides optimisés mobile & conversions.</p>
+    </div>
+    <div class="p-8 glass rounded-3xl card-hover reveal delay-300">
+      <i data-lucide="zap" class="w-12 h-12 text-primary mb-4"></i>
+      <h3 class="text-xl font-bold mb-2">Consulting IA</h3>
+      <p class="text-gray-400 text-sm mb-4">Formation et stratégie IA pour votre entreprise.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="py-24 px-6 bg-white/5" id="portfolio">
+  <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+    <h2 class="text-4xl font-extrabold mb-4">Portfolio</h2>
+    <p class="text-gray-500">Études de cas de nos clients au Burkina Faso</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <div class="bg-dark p-6 rounded-3xl card-hover reveal">
+      <img src="https://images.unsplash.com/photo-1600180758893-7a3d4f8519db?auto=format&fit=crop&w=400&q=80" class="rounded-xl mb-4">
+      <h3 class="font-bold mb-2">Boutique de Mode</h3>
+      <p class="text-gray-400 mb-2">Vendeur IA intégré, augmentation de 45% des ventes.</p>
+    </div>
+    <div class="bg-dark p-6 rounded-3xl card-hover reveal delay-100">
+      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=400&q=80" class="rounded-xl mb-4">
+      <h3 class="font-bold mb-2">Agence Immobilière</h3>
+      <p class="text-gray-400 mb-2">Qualification auto des leads, gain de 20h/semaine.</p>
+    </div>
+    <div class="bg-dark p-6 rounded-3xl card-hover reveal delay-200">
+      <img src="https://images.unsplash.com/photo-1567016540053-5b59c2847f02?auto=format&fit=crop&w=400&q=80" class="rounded-xl mb-4">
+      <h3 class="font-bold mb-2">Restaurant</h3>
+      <p class="text-gray-400 mb-2">Menu QR & prise de commande IA, service accéléré.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTHODE -->
+<section class="py-24 px-6" id="method">
+  <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+    <h2 class="text-4xl font-extrabold mb-4">Notre Méthode</h2>
+    <p class="text-gray-500">4 étapes simples pour automatiser votre business.</p>
+  </div>
+  <div class="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+    <div class="bg-dark p-8 rounded-3xl card-hover reveal">
+      <i data-lucide="search" class="w-12 h-12 text-primary mb-4"></i>
+      <h3 class="font-bold mb-2">Audit</h3>
+      <p class="text-gray-400 text-sm">Analyse complète de vos processus existants.</p>
+    </div>
+    <div class="bg-dark p-8 rounded-3xl card-hover reveal delay-100">
+      <i data-lucide="sliders" class="w-12 h-12 text-secondary mb-4"></i>
+      <h3 class="font-bold mb-2">Stratégie</h3>
+      <p class="text-gray-400 text-sm">Définition de la stratégie IA adaptée à votre business.</p>
+    </div>
+    <div class="bg-dark p-8 rounded-3xl card-hover reveal delay-200">
+      <i data-lucide="cpu" class="w-12 h-12 text-primary mb-4"></i>
+      <h3 class="font-bold mb-2">Développement</h3>
+      <p class="text-gray-400 text-sm">Création des bots, automatisations et sites web.</p>
+    </div>
+    <div class="bg-dark p-8 rounded-3xl card-hover reveal delay-300">
+      <i data-lucide="check-circle" class="w-12 h-12 text-secondary mb-4"></i>
+      <h3 class="font-bold mb-2">Livraison</h3>
+      <p class="text-gray-400 text-sm">Mise en ligne et suivi, support continu.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TARIFS -->
+<section class="py-24 px-6 bg-white/5" id="pricing">
+  <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+    <h2 class="text-4xl font-extrabold mb-4">Grille Tarifs</h2>
+    <p class="text-gray-500">Des plans adaptés à toutes les entreprises.</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <div class="bg-dark p-8 rounded-3xl card-hover reveal">
+      <h3 class="font-bold text-xl mb-2">Découverte</h3>
+      <p class="text-primary font-bold text-3xl mb-4">25.000 FCFA / mois</p>
+      <ul class="text-gray-400 mb-4">
+        <li>Chatbot basique</li>
+        <li>Support WhatsApp</li>
+      </ul>
+      <a href="https://wa.me/22607366567" class="bg-primary text-dark px-6 py-3 rounded-full font-bold block text-center hover:bg-emerald-600 transition">Choisir</a>
+    </div>
+    <div class="bg-dark p-8 rounded-3xl card-hover reveal delay-100">
+      <h3 class="font-bold text-xl mb-2">Business</h3>
+      <p class="text-primary font-bold text-3xl mb-4">50.000 FCFA / mois</p>
+      <ul class="text-gray-400 mb-4">
+        <li>Chatbot avancé</li>
+        <li>Automatisation CRM</li>
+        <li>Support dédié</li>
+      </ul>
+      <a href="https://wa.me/22607366567" class="bg-primary text-dark px-6 py-3 rounded-full font-bold block text-center hover:bg-emerald-600 transition">Choisir</a>
+    </div>
+    <div class="bg-dark p-8 rounded-3xl card-hover reveal delay-200">
+      <h3 class="font-bold text-xl mb-2">Élite</h3>
+      <p class="text-primary font-bold text-3xl mb-4">100.000 FCFA / mois</p>
+      <ul class="text-gray-400 mb-4">
+        <li>Tout inclus</li>
+        <li>Web design High-Tech</li>
+        <li>Consulting IA</li>
+      </ul>
+      <a href="https://wa.me/22607366567" class="bg-primary text-dark px-6 py-3 rounded-full font-bold block text-center hover:bg-emerald-600 transition">Choisir</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-24 px-6" id="faq">
+  <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+    <h2 class="text-4xl font-extrabold mb-4">FAQ</h2>
+    <p class="text-gray-500">Questions fréquentes sur l'IA et l'automatisation.</p>
+  </div>
+  <div class="max-w-4xl mx-auto space-y-6 reveal">
+    <div class="bg-dark p-6 rounded-3xl">
+      <h4 class="font-bold mb-2">Combien coûte un chatbot ?</h4>
+      <p class="text-gray-400">Nos plans commencent à 25.000 FCFA/mois selon les fonctionnalités.</p>
+    </div>
+    <div class="bg-dark p-6 rounded-3xl">
+      <h4 class="font-bold mb-2">L’IA est-elle sécurisée ?</h4>
+      <p class="text-gray-400">Toutes les données sont cryptées et stockées en sécurité.</p>
+    </div>
+    <div class="bg-dark p-6 rounded-3xl">
+      <h4 class="font-bold mb-2">Est-ce utile pour toutes les PME ?</h4>
+      <p class="text-gray-400">Oui, que ce soit un restaurant, une boutique ou une agence, l’IA optimise le temps et les ventes.</p>
+    </div>
+    <div class="bg-dark p-6 rounded-3xl">
+      <h4 class="font-bold mb-2">Peut-on automatiser les tâches administratives ?</h4>
+      <p class="text-gray-400">Absolument, nous intégrons Make, CRM et Google Sheets pour tout automatiser.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-24 px-6 bg-white/5" id="contact">
+  <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+    <h2 class="text-4xl font-extrabold mb-4">Contactez-nous</h2>
+    <p class="text-gray-500">Décrivez votre projet et nous vous répondrons rapidement.</p>
+  </div>
+  <form action="https://formspree.io/f/myformid" method="POST" class="max-w-3xl mx-auto grid gap-6 reveal">
+    <input type="text" name="name" placeholder="Votre Nom" required class="p-4 rounded-xl bg-dark border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary">
+    <input type="tel" name="whatsapp" placeholder="Votre WhatsApp" required class="p-4 rounded-xl bg-dark border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary">
+    <textarea name="project" rows="5" placeholder="Votre Projet" required class="p-4 rounded-xl bg-dark border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+    <button type="submit" class="bg-primary text-dark px-8 py-4 rounded-full font-bold hover:bg-emerald-600 transition">Envoyer</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 px-6 bg-dark mt-24">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-400">
+    <p>STRATOON-AI | Ouagadougou, Burkina Faso © 2025</p>
+    <div class="flex gap-6 mt-4 md:mt-0">
+      <a href="#"><i data-lucide="facebook" class="w-5 h-5 hover:text-primary transition"></i></a>
+      <a href="#"><i data-lucide="instagram" class="w-5 h-5 hover:text-secondary transition"></i></a>
+      <a href="#"><i data-lucide="linkedin" class="w-5 h-5 hover:text-primary transition"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- CHATBOT FLOTTANT AVEC ICÔNE ROBOT -->
+<div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
+  <!-- Icône réduite du bot -->
+  <div id="chatbot-icon" class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full shadow-2xl flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
+    <i data-lucide="robot" class="w-8 h-8 text-dark"></i>
+  </div>
+
+  <!-- Fenêtre du chatbot (cachée par défaut) -->
+  <div id="chatbot-box" class="hidden mt-4 w-80 bg-dark rounded-3xl shadow-2xl border border-white/10 overflow-hidden">
+    <div class="p-4 border-b border-white/10 bg-gradient-to-r from-primary to-secondary font-bold">Stratoon-AI 🤖</div>
+    <div class="p-4" id="chat-messages">
+      <div class="mb-2 text-gray-300">Bienvenue chez Stratoon-AI ! Quel est votre projet ?</div>
+    </div>
+    <div class="flex flex-col gap-2 p-4">
+      <button onclick="chatReply('bot')" class="bg-primary text-dark px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition">🤖 Un Bot WhatsApp</button>
+      <button onclick="chatReply('sales')" class="bg-secondary text-dark px-4 py-2 rounded-xl font-bold hover:bg-purple-700 transition">📈 Booster mes ventes</button>
+      <button onclick="chatReply('pricing')" class="bg-primary text-dark px-4 py-2 rounded-xl font-bold hover:bg-emerald-600 transition">💰 Tarifs</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Toggle chatbot box
+const chatbotIcon = document.getElementById('chatbot-icon');
+const chatbotBox = document.getElementById('chatbot-box');
+
+chatbotIcon.addEventListener('click', () => {
+  chatbotBox.classList.toggle('hidden');
+});
+
+// Reveal au scroll
+const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', () => {
+  for (const r of reveals) {
+    const top = r.getBoundingClientRect().top;
+    if(top < window.innerHeight - 50) r.classList.add('active');
+  }
+});
+
+// Chatbot interactions
+function chatReply(type){
+  const chat = document.getElementById('chat-messages');
+  let message = '';
+  if(type==='bot') message = 'Nos bots WhatsApp automatisent vos ventes !';
+  if(type==='sales') message = 'Découvrez nos stratégies pour booster vos ventes.';
+  if(type==='pricing') message = 'Choisissez un plan adapté à votre entreprise.';
+  chat.innerHTML += `<div class="mb-2 text-gray-300">${message}</div>`;
+  // Redirection WhatsApp
+  setTimeout(()=>window.open('https://wa.me/22607366567?text='+encodeURIComponent(message), '_blank'), 500);
+}
+</script>
+
+</body>
+</html>
